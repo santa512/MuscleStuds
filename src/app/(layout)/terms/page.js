@@ -15,7 +15,7 @@ export default function Terms() {
 
 				<b>Warranty Disclaimer<br/><br/></b>
 
-				This site and the materials and products on this site are provided "as is" and without warranties of any kind, whether express or implied. To the fullest extent permissible pursuant to applicable law, MBW Entertainment, LLC disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose and non-infringement. MBW Entertainment, LLC does not represent or warrant that the functions contained in the site will be uninterrupted or error-free, that the defects will be corrected, or that this site or the server that makes the site available are free of viruses or other harmful components. MBW Entertainment, LLC does not make any warrantees or representations regarding the use of the materials in this site in terms of their correctness, accuracy, adequacy, usefulness, timeliness, reliability or otherwise. Some states do not permit limitations or exclusions on warranties, so the above limitations may not apply to you.<br/><br/>
+				This site and the materials and products on this site are provided &quot;as is&quot; and without warranties of any kind, whether express or implied. To the fullest extent permissible pursuant to applicable law, MBW Entertainment, LLC disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose and non-infringement. MBW Entertainment, LLC does not represent or warrant that the functions contained in the site will be uninterrupted or error-free, that the defects will be corrected, or that this site or the server that makes the site available are free of viruses or other harmful components. MBW Entertainment, LLC does not make any warrantees or representations regarding the use of the materials in this site in terms of their correctness, accuracy, adequacy, usefulness, timeliness, reliability or otherwise. Some states do not permit limitations or exclusions on warranties, so the above limitations may not apply to you.<br/><br/>
 
 				<b>Limitation of Liability<br/><br/></b>
 
@@ -47,7 +47,7 @@ export default function Terms() {
 
 				<b>Indemnification<br/><br/></b>
 
-				You agree to indemnify, defend, and hold harmless MBW Entertainment, LLC, its officers, directors, employees, agents, licensors and suppliers (collectively the "Service Providers") from and against all losses, expenses, damages and costs, including reasonable attorneys&apos; fees, resulting from any violation of these terms and conditions or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing the site using your Internet account.<br/><br/>
+				You agree to indemnify, defend, and hold harmless MBW Entertainment, LLC, its officers, directors, employees, agents, licensors and suppliers (collectively the &quot;Service Providers&quot;) from and against all losses, expenses, damages and costs, including reasonable attorneys&apos; fees, resulting from any violation of these terms and conditions or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing the site using your Internet account.<br/><br/>
 
 				<b>Third-Party Links<br/><br/></b>
 

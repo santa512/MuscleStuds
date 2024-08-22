@@ -4,7 +4,7 @@ export default function Support() {
       <h2 className="text-xl text-center py-5 uppercase text-gray-400">Support</h2>
       <p className="text-gray-300 leading-loose">
         <b>Am I able to save the images onto my computer?</b><br/>
-        Yes. You can save images by right clicking on the image and selecting the 'save image' command.<br/>
+        Yes. You can save images by right clicking on the image and selecting the &apos;save image&apos; command.<br/>
         <b>Are the videos available to buy on DVD?</b><br/>
         Yes.<br/>
         <b>Are your videos DRM protected?</b><br/>
