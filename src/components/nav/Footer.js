@@ -6,7 +6,7 @@ export default function Footer() {
   let currentYear = date.getFullYear();
 
   return (
-    <footer className="bg-gray-200 flex flex-col justify-center items-center text-center space-y-4 py-4 px-2">
+    <footer className="bg-neutral-800 flex flex-col justify-center items-center text-center space-y-4 py-4 px-2">
       <div>
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={120} height={50} className="w-32 h-auto sm:w-24 md:w-28 lg:w-32" />

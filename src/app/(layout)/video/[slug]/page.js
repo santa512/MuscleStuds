@@ -49,33 +49,32 @@ export default async function VideoPage({ params }) {
 	const video = await getVideoBySlug(slug);
 	const catalog = await getCatalog(video[0].catalog);
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen bg-secondary p-4">
 			{video[0]?.title && (
-				<h2 className="text-xl text-center py-5 uppercase">{video[0].title}</h2>
+				<h2 className="text-xl text-center pt-5 uppercase text-gray-300">{video[0].title}</h2>
 			)}
-			<h3 className="text-xl text-center py-5 uppercase">{catalog.name}</h3>
+			<h3 className="text-xl text-center py-5 uppercase text-gray-300">{catalog.name}</h3>
 			<video className="w-full bg-gray-800" controls>
 				<source src={`${baseURL}/assets/${video[0].video_preview}`} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
-			<p className="text-black mt-6">
-				{video[0].description}
+			<p className="text-gray-300 px-2 my-8">
+				{video[0].description ? video[0].description : "Lorem Ipsum is simply dummy text of the printing and typesetting since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
 			</p>
 			{/* <button className="flex flex-1 bg-slate-300 w-1/3">
 				<Link href={`/product/${catalog.id}`}>
 					Download
 				</Link>
 			</button> */}
-			<Button downloadId={video[0].id} type="download" text="Download" price={video[0].price.toFixed(2)} />
-			<div className="grid grid-cols-3 gap-4 mt-8 ">
+			<Button downloadId={video[0].id} type="download" text="Download Full Video" price={video[0].price.toFixed(2)} />
+			<div className="grid grid-cols-3 gap-4 my-8 ">
           <Image src={`${baseURL}/assets/${video[0].image_previews}`} alt="Wrestler 1" width={300} height={200} className="object-cover"/>
-          <Image src="/images/wrestler2.jpg" alt="Wrestler 2" width={300} height={200} className="object-cover"/>
-          <Image src="/images/wrestler3.jpg" alt="Wrestler 3" width={300} height={200} className="object-cover"/>
-          <Image src="/images/wrestler4.jpg" alt="Wrestler 4" width={300} height={200} className="object-cover"/>
-          <Image src="/images/wrestler5.jpg" alt="Wrestler 5" width={300} height={200} className="object-cover"/>
-          <Image src="/images/wrestler6.jpg" alt="Wrestler 6" width={300} height={200} className="object-cover"/>
+          <Image src="/wrestler.jpg" alt="Wrestler 2" width={300} height={200} className="object-cover"/>
+          <Image src="/wrestler.jpg" alt="Wrestler 3" width={300} height={200} className="object-cover"/>
+          <Image src="/wrestler.jpg" alt="Wrestler 4" width={300} height={200} className="object-cover"/>
+          <Image src="/wrestler.jpg" alt="Wrestler 5" width={300} height={200} className="object-cover"/>
+          <Image src="/wrestler.jpg" alt="Wrestler 6" width={300} height={200} className="object-cover"/>
 			</div>
-
 		</div>
 	)
 }

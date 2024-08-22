@@ -68,8 +68,7 @@ export default async function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen container mx-auto">
-  
+      <main className="min-h-screen container mx-auto mt-32">
         <div>
           <video className="w-full h-[70vh] bg-gray-800" controls>
             {/* Add your video source here */}
@@ -80,30 +79,24 @@ export default async function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="flex flex-row py-10 gap-8">
-
-          <div className="hidden md:flex flex-col w-[320px]">
+        <div className="flex flex-row py-10 gap-6">
+          <div className="hidden md:flex flex-col w-[350px] bg-secondary px-4">
             <Wrestlers />
           </div>
 
-          <div className="w-full py-4 px-4 md:px-0">
-
+          <div className="w-full py-8 md:px-8 bg-secondary">
             <div className="mx-auto">
-              <h2 className="text-2xl text-center font-bold uppercase tracking-tight"><Link href={`/catalogs/${catalog.slug}`}>{catalog.name}</Link></h2>
+              <h2 className="text-2xl text-center font-bold uppercase tracking-tight text-gray-300"><Link href={`/catalogs/${catalog.slug}`}>{catalog.name}</Link></h2>
               <p className="mt-4 text-gray-400 text-center">{convertDate(catalog.date_created)}</p>
-              <p className="mt-4 mb-12">{catalog.description}</p>
+              <p className="mt-4 mb-12 text-gray-300">{catalog.description}</p>
             </div>
-
-                       
+        
             {/* TODO: check responsiveness on larger screens */}
-            <div className="mt-8 flex flex-col md:flex-row items-center md:items-start max-w-5xl gap-4">
-              {videos.map((video) => (<VideoCard key={video.id} {...video} />))}
+            <div className="mt-8 flex flex-wrap justify-between">
+              {videos.map((video) => (<div key={video.id} className="md:w-[calc(32%)]"><VideoCard {...video} /></div>))}
             </div>
-        
-        
           </div>
         </div>
-
       </main>
       <ScrollToTop />
       <Footer />

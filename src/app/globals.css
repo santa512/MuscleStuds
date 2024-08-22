@@ -5,3 +5,8 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+
+body {
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/bg.jpg');
+}

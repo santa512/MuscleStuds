@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <>
       <Header />
-      <div className="min-h-screen mx-auto">
+      <div className="min-h-screen mx-auto bg-primary mt-16">
         <div className="flex flex-row pt-10 gap-8 max-w-7xl mx-auto px-2">
-          <div className="hidden md:flex flex-col w-[320px] ">
+          <div className="hidden md:flex flex-col w-[350px] bg-secondary px-4 pb-6">
             {/* TODO: wrestler sidebar + catalog sidebar */}
             <Wrestlers />
           </div>

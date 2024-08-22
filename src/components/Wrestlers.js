@@ -21,12 +21,12 @@ async function getWrestlers() {
    
     return (
       <div>
-        <h2 className="text-xl tracking-tight text-center py-5 uppercase">Our Wrestlers</h2>
+        <h2 className="text-xl tracking-tight text-center pt-8 pb-4 uppercase text-gray-300 mb-3">Our Wrestlers</h2>
         <ul className="">
           {wrestlers.length > 0 ? (
             wrestlers.map((wrestler) => (
-                <li key={wrestler.id} className="border-b border-black pt-4 pb-2 list-none text-sm">
-                    <Link href={`/wrestlers/${wrestler.slug}`} className="w-full text-left uppercase block">
+                <li key={wrestler.id} className="border-b border-black pt-4 pb-2 list-none text-sm pl-4">
+                    <Link href={`/wrestlers/${wrestler.slug}`} className="w-full text-left block text-gray-300 hover:text-gray-100 text-lg">
                         {wrestler.name}
                     </Link>
                 </li>

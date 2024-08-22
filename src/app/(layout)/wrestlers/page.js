@@ -28,13 +28,13 @@ export default async function WrestlersPage() {
   console.log(wrestlers)
 
   return (
-    <div>
-      <h2 className="text-xl text-center py-5 uppercase">Wrestlers</h2>
+    <div className="bg-secondary p-4">
+      <h1 className="text-2xl text-center py-3 uppercase text-gray-400 mb-6">Wrestlers</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
         {wrestlers.map((wrestler) => (
           <Link
             key={wrestler.id}
-            className="shadow border text-center w-full"
+            className="shadow text-center w-full bg-neutral-900"
             href={`/wrestlers/${wrestler.slug}`}
           >
             <img
@@ -42,9 +42,9 @@ export default async function WrestlersPage() {
               className="h-72 w-full object-cover object-top"
               alt={wrestler.name}
             />
-            <div className="p-4">
-              <p className="text-xl font-semibold">{wrestler.name}</p>
-              <p>{wrestler.Video?.length} videos</p>
+            <div className="p-4 my-4">
+              <p className="text-lg text-gray-400">{wrestler.name}</p>
+              <p className="text-gray-500">{wrestler.Video?.length} videos</p>
             </div>
           </Link>
         ))}
