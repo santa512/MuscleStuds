@@ -6,8 +6,8 @@ export default function Privacy() {
 				This privacy policy discloses the privacy practices for muscleboywrestling.com. It applies solely to information collected by this web site.<br/><br/>
 				We collect several types of information from and about you, including:<br/><br/>
 				<ul className="list-disc ml-10">
-					<li>Your email address, password and any general payment information you submit during registration or checkout. We treat this information as "Personally Identifiable Information" or "PII".<br/></li>
-					<li>Non-personally identifiable information, such information about your computer system or device, your preferences, your online activity, and your location information ("Non-Personally Identifiable Information" a "Non-PII"). Non-PII, by itself, does not identify you, but it can be combined with other information in way that allows you to be identified. If this happens, we will treat the combined information as PII.<br/></li>
+					<li>Your email address, password and any general payment information you submit during registration or checkout. We treat this information as &quot;Personally Identifiable Information&quot; or &quot;PII&quot;.<br/></li>
+					<li>Non-personally identifiable information, such information about your computer system or device, your preferences, your online activity, and your location information (&quot;Non-Personally Identifiable Information&quot; a &quot;Non-PII&quot;). Non-PII, by itself, does not identify you, but it can be combined with other information in way that allows you to be identified. If this happens, we will treat the combined information as PII.<br/></li>
 					<li>We use Google Analytics to collect web data that helps us analyze our web traffic.<br/><br/></li>
 				</ul>
 				We may collect information from or about you in the following ways:<br/>

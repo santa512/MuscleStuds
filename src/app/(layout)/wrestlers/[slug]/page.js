@@ -35,7 +35,7 @@ export default async function WrestlerPage({ params }) {
 
 
   return (
-    <div>
+    <div className='bg-secondary p-4'>
       {/*<div id="fb-root"></div>*/}
 {/*      <script
         async
@@ -50,22 +50,22 @@ export default async function WrestlerPage({ params }) {
         charSet="utf-8"
       ></script>*/}
 
-      <h1 className="text-lg text-center py-5 uppercase tracking-tight">{wrestler.name}</h1>
-      <div className="flex flex-row gap-8">
+      <h1 className="text-xl text-center py-5 uppercase tracking-tight text-gray-400">{wrestler.name}</h1>
+      <div className="flex flex-row gap-8 mx-4">
         <img
           src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/assets/${wrestler.primary_photo}`}
           className="h-72 object-fit"
           alt={wrestler.name}
         />
         <div>
-          <h2 className="text-2xl mb-2 flex flex-row items-center gap-2.5">{wrestler.name} <span className="px-1.5 py-0.5 border rounded bg-gray-300 text-xs text-green-600 font-semibold">WS exclusive</span></h2>
-          <p className="text-sm"><span className="font-bold">Weight: </span> {wrestler.weight}</p>
-          <p className="text-sm"><span className="font-bold">Height: </span> {wrestler.height}</p>
+          <h2 className="text-2xl mb-2 flex flex-row items-center gap-2.5 text-gray-300">{wrestler.name} <span className="px-1.5 py-0.5 border rounded bg-gray-300 text-xs text-green-600 font-semibold">WS exclusive</span></h2>
+          <p className="text-sm"><span className="font-bold text-gray-300">Height: </span> {wrestler.height}</p>
+          <p className="text-sm"><span className="font-bold text-gray-300">Weight: </span> {wrestler.weight}</p>
         </div>
       </div>
 
 
-      <div className="flex flex-row gap-4 mt-4">
+      <div className="flex flex-row gap-4 m-4">
         <a
           className="text-2xl"
           target="_blank"
@@ -89,13 +89,13 @@ export default async function WrestlerPage({ params }) {
       </div>
 
       <div className="my-12">
-        <p className="mb-4 text-center text-lg uppercase tracking-tight">{wrestler.name} videos</p>
-        {wrestler.Video.map(video => (
-          <VideoCard key={video?.Video_id.id} {...video?.Video_id} />
-        ))}
+        <p className="mb-4 text-center text-lg uppercase tracking-tight text-gray-400">{wrestler.name} videos</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {wrestler.Video.map(video => (
+            <VideoCard key={video?.Video_id.id} {...video?.Video_id} />
+          ))}
+        </div>
       </div>
-
-
 
     </div>
   );
